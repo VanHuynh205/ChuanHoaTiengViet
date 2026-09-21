@@ -1,0 +1,177 @@
+{
+  "model": "google/gemma-4-31b-it",
+  "online": true,
+  "cases": [
+    {
+      "id": "work",
+      "group": "diacritics",
+      "input": "minh da gui bao cao cho nhom. ban kiem tra lai so lieu truoc khi nop, dung sua nhung muc da duoc xac nhan.",
+      "reference": "Mình đã gửi báo cáo cho nhóm. Bạn kiểm tra lại số liệu trước khi nộp, đừng sửa những mục đã được xác nhận.",
+      "results": {
+        "dataset": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Ban kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Mình đã gửi báo cáo cho nhóm. Bạn kiểm tra lại số liệu trước khi nộp, đừng sửa những mục đã được xác nhận.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 42.446,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"mình đã gửi báo cáo cho nhóm. bạn kiểm tra lại số liệu trước khi nộp, đừng sửa những mục đã được xác nhận.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"minh da gui bao cao cho nhom. ban kiem tra lai so lieu truoc khi nop, dung sua nhung muc da duoc xac nhan.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 0,
+          "reference_words": 24,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": "travel",
+      "group": "diacritics",
+      "input": "neu troi mua thi minh se doi lich di choi. ca nhom nen mang theo ao khoac, nuoc uong va giay to can thiet.",
+      "reference": "Nếu trời mưa thì mình sẽ đổi lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+      "results": {
+        "dataset": {
+          "output": "Nếu trời mua thi minh sẽ đối lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Nếu trời mưa thì mình sẽ dời lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 36.803,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"Nếu trời mưa thì mình sẽ dời lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"neu troi mua thi minh se doi lich di choi. ca nhom nen mang theo ao khoac, nuoc uong va giay to can thiet.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 1,
+          "reference_words": 24,
+          "wer": 0.041666666666666664,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "typing",
+      "group": "contextual_typo",
+      "input": "Đừng so sách bản thân với người khác. Hãy tập chung vào việc đang làm.",
+      "reference": "Đừng so sánh bản thân với người khác. Hãy tập trung vào việc đang làm.",
+      "results": {
+        "dataset": {
+          "output": "Đừng so sách bản thân với người khác. Hãy tập chung vào việc đang làm.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 15,
+          "wer": 0.13333333333333333,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Đừng so sách bản thân với người khác. Hãy tập chung vào việc đang làm.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 90.032,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 15,
+          "wer": 0.13333333333333333,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "mixed",
+      "group": "mixed",
+      "input": "hom nay ko di choi dc vi minh chua lam xong bai. neu ban ranh thi nhac minh nop bai truoc 17:30 nhe.",
+      "reference": "Hôm nay không đi chơi được vì mình chưa làm xong bài. Nếu bạn rảnh thì nhắc mình nộp bài trước 17:30 nhé.",
+      "results": {
+        "dataset": {
+          "output": "Hôm nay không đi chơi được vì minh chưa làm xong bài. Nếu bạn ranh thi nhạc minh nộp bại trước 17:30 nhẹ.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 7,
+          "reference_words": 24,
+          "wer": 0.2916666666666667,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Hôm nay không đi chơi được vì mình chưa làm xong bài. Nếu bạn rảnh thì nhắc mình nộp bài trước 17:30 nhé.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 37.03,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"Hôm nay không đi chơi được vì mình chưa làm xong bài. Nếu bạn rảnh thì nhắc mình nộp bài trước 17:30 nhé.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"hom nay ko di choi dc vi minh chua lam xong bai. neu ban ranh thi nhac minh nop bai truoc 17:30 nhe.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 0,
+          "reference_words": 24,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 4,
+  "tokens": 1397,
+  "transport_errors": [
+    "AITimeoutError"
+  ]
+}

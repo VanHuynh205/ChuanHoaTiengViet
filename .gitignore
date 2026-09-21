@@ -1,0 +1,65 @@
+backend/tests/tmp_*/
+backend/tests/tmp[!_]*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.env
+backend-dev.pid
+frontend-dev.pid
+backend-dev.log
+backend-dev.err.log
+frontend-dev.log
+frontend-dev.err.log
+backend/data/DataDauCau/*.csv
+!backend/data/DataDauCau/sample_5k.csv
+# Corpus chat con + history export (dữ liệu người dùng) — không lên GitHub
+backend/data/DataDauCau/chat/
+backend/data/diacritic/.checkpoints/
+.vs/
+*.slnx.user
+node_modules/
+dist/
+.venv/
+venv/
+frontend/playwright-report/
+frontend/test-results/
+*.tsbuildinfo
+.runtime/
+
+# Rác pytest / sandbox (các thư mục tạm của pytest, có thể bị khóa ACL trên Windows)
+.test_tmp/
+.test_tmp_fresh/
+.dsh-pytest-tmp/
+.pytest_tmp*/
+.pytest_dsh_sc*/
+.review_tmp*/
+backend/_tmp_admission_run/
+review_pytest.txt
+.scratch/pytest-rebuild-tmp/
+.scratch/**/.pytest-tmp/
+
+# Backup/smoke cục bộ của asset dấu (tái tạo được qua rebuild script)
+backend/data/diacritic/backup/
+backend/data/diacritic/.smoke/
+
+# Thư mục công cụ cục bộ theo máy
+.claude/
+.codex/
+.bh-config/
+.browser-harness/
+.playwright-mcp/
+.impeccable/
+
+# Lưới an toàn: không bao giờ commit credential probe hay file .env thật
+.scratch/ai-semantic-fix/.probe_cred
+**/.env
+!.env.example
+
+# Quyết định owner (lần push đầu): không đưa lên GitHub
+AnhMau/
+# File example bị guard chặn đọc nên chưa kiểm chứng được nội dung —
+# xem lại và bỏ dòng ignore bên dưới nếu chắc chắn chỉ là giá trị mẫu
+backend/.env.quality.example

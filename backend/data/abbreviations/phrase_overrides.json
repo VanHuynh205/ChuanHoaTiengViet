@@ -1,0 +1,52 @@
+{
+  "phrases": [
+    {
+      "phrase": "đk hp",
+      "expanded": "đăng ký học phần",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "ko bt",
+      "expanded": "không biết",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "k pải v",
+      "expanded": "không phải vậy",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "vn cup",
+      "expanded": "giải đấu Việt Nam",
+      "source": "override",
+      "confidence": 0.9
+    },
+    {
+      "phrase": "ko sao",
+      "expanded": "không sao",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "ko hiểu",
+      "expanded": "không hiểu",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "m à",
+      "expanded": "m à",
+      "source": "override",
+      "confidence": 1.0
+    },
+    {
+      "phrase": "m ạ",
+      "expanded": "m ạ",
+      "source": "override",
+      "confidence": 1.0
+    }
+  ]
+}

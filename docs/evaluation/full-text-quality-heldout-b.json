@@ -1,0 +1,214 @@
+{
+  "model": "google/gemma-4-31b-it",
+  "online": true,
+  "cases": [
+    {
+      "id": "mixed_work",
+      "group": "mixed",
+      "input": "mik dang xem lai tai lieu, bn gui giup minh ban moi nhat nhe. minh se tra loi sau khi doc xong.",
+      "reference": "Mình đang xem lại tài liệu, bạn gửi giúp mình bản mới nhất nhé. Mình sẽ trả lời sau khi đọc xong.",
+      "results": {
+        "dataset": {
+          "output": "Mình đang xem lại tài liệu, bạn gửi giúp minh bản mới nhất nhẹ. Minh sẽ trả lời sau khi đọc xong.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 22,
+          "wer": 0.13636363636363635,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Mình đang xem lại tài liệu, bạn gửi giúp mình bản mới nhất nhé. Mình sẽ trả lời sau khi đọc xong.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 40.831,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"mình đang xem lại tài liệu, bạn gửi giúp mình bản mới nhất nhé. mình sẽ trả lời sau khi đọc xong.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"mik dang xem lai tai lieu, bn gui giup minh ban moi nhat nhe. minh se tra loi sau khi doc xong.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 0,
+          "reference_words": 22,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": "unchanged",
+      "group": "preservation",
+      "input": "Tôi chưa đồng ý với đề xuất này. Chúng ta cần kiểm tra lại thông tin trước khi quyết định.",
+      "reference": "Tôi chưa đồng ý với đề xuất này. Chúng ta cần kiểm tra lại thông tin trước khi quyết định.",
+      "results": {
+        "dataset": {
+          "output": "Tôi chưa đồng ý với đề xuất này. Chúng ta cần kiểm tra lại thông tin trước khi quyết định.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 0,
+          "reference_words": 20,
+          "wer": 0.0,
+          "exact": true
+        },
+        "whole_text": {
+          "output": "Tôi chưa đồng ý với đề xuất này. Chúng ta cần kiểm tra lại thông tin trước khi quyết định.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 90.02,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 0,
+          "reference_words": 20,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": "literals",
+      "group": "preservation",
+      "input": "Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.",
+      "reference": "Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.",
+      "results": {
+        "dataset": {
+          "output": "Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 0,
+          "reference_words": 27,
+          "wer": 0.0,
+          "exact": true
+        },
+        "whole_text": {
+          "output": "Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 67.517,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"Gửi bản API_v2 cho Minh Anh qua test@example.com. Giữ URL https://example.com/a?q=1 và giá trị 3.14, không đổi mã AB123.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 0,
+          "reference_words": 27,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": "foreign",
+      "group": "preservation",
+      "input": "Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.",
+      "reference": "Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.",
+      "results": {
+        "dataset": {
+          "output": "Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 0,
+          "reference_words": 17,
+          "wer": 0.0,
+          "exact": true
+        },
+        "whole_text": {
+          "output": "Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 53.696,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"Nhóm dùng Python và React để làm prototype. Câu tiếng Anh là good morning, không cần dịch.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 0,
+          "reference_words": 17,
+          "wer": 0.0,
+          "exact": true
+        }
+      }
+    },
+    {
+      "id": "paragraphs",
+      "group": "layout",
+      "input": "buoi sang minh doc sach.\n\nbuoi chieu minh lam bai tap.\n\nbuoi toi minh nghi ngoi.",
+      "reference": "Buổi sáng mình đọc sách.\n\nBuổi chiều mình làm bài tập.\n\nBuổi tối mình nghỉ ngơi.",
+      "results": {
+        "dataset": {
+          "output": "Buổi sáng minh đọc sách.\n\nBuổi chiều minh làm bài tập.\n\nBuổi tối minh nghỉ ngơi.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 16,
+          "wer": 0.1875,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Buổi sáng minh đọc sách.\n\nBuổi chiều minh làm bài tập.\n\nBuổi tối minh nghỉ ngơi.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 90.023,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 16,
+          "wer": 0.1875,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 5,
+  "tokens": 1392,
+  "transport_errors": [
+    "AITimeoutError",
+    "AITimeoutError"
+  ]
+}

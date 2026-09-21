@@ -1,0 +1,26 @@
+{
+  "scope": "Small fixed evaluation, not a population accuracy estimate",
+  "development_ids": [
+    "food",
+    "meaning",
+    "school"
+  ],
+  "results": [
+    {
+      "group": "all",
+      "cases": 12,
+      "reference_words": 256,
+      "previous_model_word_errors": 27,
+      "quality_model_word_errors": 7,
+      "quality_timeouts": 3
+    },
+    {
+      "group": "held_out",
+      "cases": 9,
+      "reference_words": 189,
+      "previous_model_word_errors": 15,
+      "quality_model_word_errors": 6,
+      "quality_timeouts": 3
+    }
+  ]
+}

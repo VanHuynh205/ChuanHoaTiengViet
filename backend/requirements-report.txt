@@ -1,0 +1,7 @@
+# Extra dependencies for the one-off report generator
+# (backend/scripts/rewrite_hutech_report.py). Deliberately NOT in
+# requirements.txt so day-to-day dev and CI do not have to install them.
+#
+#   ..\.venv\Scripts\python.exe -m pip install -r requirements-report.txt
+python-docx>=1.1
+Pillow>=10.0

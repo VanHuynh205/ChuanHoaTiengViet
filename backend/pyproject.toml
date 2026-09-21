@@ -1,0 +1,35 @@
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.mypy]
+python_version = "3.11"
+strict_optional = true
+disallow_untyped_defs = true
+files = [
+  "app/ai",
+  "app/normalizer/phrase_normalizer.py",
+  "app/normalizer/diacritic_restorer.py",
+]
+
+[tool.pytest.ini_options]
+markers = ["unit", "integration", "slow", "ai"]
+# ``backend/`` is the import root: ``app``, ``scripts`` and ``database`` are all
+# top-level packages relative to this file. Setting it explicitly means plain
+# ``pytest`` works the same as ``python -m pytest``.
+pythonpath = ["."]
+testpaths = ["tests"]
+# Fix Windows permission issue with default system temp directory
+# Note: pytest.ini takes precedence for non-table options like basetemp
+
+[tool.coverage.run]
+source = ["app"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+skip_covered = true

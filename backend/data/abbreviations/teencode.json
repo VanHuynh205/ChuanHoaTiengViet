@@ -1,0 +1,136 @@
+{
+  "abbreviations": [
+    {
+      "id": "A8D42EF5-44F2-4473-9681-1D4066598D47",
+      "abbr": "ct",
+      "expanded": "công ty",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "admin_dictionary",
+      "approved": true,
+      "created_at": "2026-06-05T08:14:19.8496682",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "8472B64C-1503-49B6-934B-E1009474B741",
+      "abbr": "cx",
+      "expanded": "cũng",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:20.6795209",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "79F9C79B-A5FA-4F41-A5A6-452D6E1AD186",
+      "abbr": "dc",
+      "expanded": "được",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:49.2401300",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "57357D08-FDAC-4F46-BEC5-19CD53FA3FD2",
+      "abbr": "đt",
+      "expanded": "điện thoại",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:41.1842046",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "BC594808-BF7E-4157-BCCE-FD4D6A986FFB",
+      "abbr": "k",
+      "expanded": "không",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:15.9287340",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "88735654-28C9-472F-AAD2-10DF890830AA",
+      "abbr": "mk",
+      "expanded": "mình",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:24:04.5332247",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "740138DD-9A8E-4C54-83DD-F7F9851C3B4A",
+      "abbr": "mn",
+      "expanded": "mọi người",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-05T08:18:22.1843563",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "3F95115D-47A9-4C18-8C8B-D9AED2F0FF56",
+      "abbr": "ntn",
+      "expanded": "như thế nào",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:35.1771800",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "7E170F6B-D99E-4100-9BBA-59491FDE5E74",
+      "abbr": "nv",
+      "expanded": "nhân viên",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-05T08:17:44.7541470",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "1E2ACD11-C2F1-42E5-B5DC-7ED5F710D9F1",
+      "abbr": "qtr",
+      "expanded": "quan trọng",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:55.5632747",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "35F69254-7C3E-46BD-A4A2-703532A8B453",
+      "abbr": "r",
+      "expanded": "rồi",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-05T08:14:42.4517269",
+      "approved_by": "admin_main"
+    },
+    {
+      "id": "6228CFA2-E760-4E8F-AC58-54168AE0CCE0",
+      "abbr": "sv",
+      "expanded": "sinh viên",
+      "alternative_expansions": [],
+      "domain": "general",
+      "source": "live_runtime",
+      "approved": true,
+      "created_at": "2026-06-06T03:34:27.2185952",
+      "approved_by": "admin_main"
+    }
+  ]
+}

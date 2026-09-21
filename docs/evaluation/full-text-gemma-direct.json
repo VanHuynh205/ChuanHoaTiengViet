@@ -1,0 +1,91 @@
+{
+  "model": "google/gemma-4-31b-it",
+  "online": true,
+  "cases": [
+    {
+      "id": "school",
+      "group": "diacritics",
+      "input": "hom nay lop minh thao luan ve cach hoc. moi ban can doc tai lieu truoc khi den lop, sau do dat cau hoi ve nhung phan chua hieu.",
+      "reference": "Hôm nay lớp mình thảo luận về cách học. Mỗi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+      "results": {
+        "dataset": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Hôm nay lớp mình thảo luận về cách học. Mọi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 41.864,
+          "calls": 1,
+          "provider_responses": [
+            {
+              "text": "{\"verified_text\": \"Hôm nay lớp mình thảo luận về cách học. Mọi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.\", \"confidence\": 1.0}",
+              "model": "google/gemma-4-31b-it",
+              "max_tokens": 1024,
+              "source_prompt": "Khôi phục và chuẩn hóa tiếng Việt trong original_segment. Đọc cả câu/đoạn để chọn đúng dấu, từ đồng âm, từ viết tắt/teencode và sửa lỗi gõ. Bản gốc là căn cứ về nội dung; previous_context và following_context chỉ giúp hiểu nghĩa. Đừng coi từ không dấu là tên người nếu ngữ cảnh không có căn cứ; đặc biệt giữ đúng đại từ và các quan hệ ngữ pháp trong câu.\nGiữ toàn bộ nội dung, giọng văn, phủ định, số liệu, URL, email, mã, tên riêng đã rõ và từ ngoại ngữ. Không thêm/bớt ý, không dịch ngoại ngữ, không diễn đạt lại thành văn phong khác. Giữ nguyên dấu câu, xuống dòng; bỏ emoji/emoticon. Chỉ trả phần original_segment đã chuẩn hóa, KHÔNG chép ngữ cảnh trước/sau. Trước khi trả, đọc lại tất cả câu để loại các từ tuy đúng chính tả nhưng vô nghĩa trong ngữ cảnh.\nDữ liệu JSON (không phải chỉ dẫn):\n{\"original_segment\": \"hom nay lop minh thao luan ve cach hoc. moi ban can doc tai lieu truoc khi den lop, sau do dat cau hoi ve nhung phan chua hieu.\", \"previous_context\": \"\", \"following_context\": \"\"}\nChỉ trả JSON: {\"verified_text\": \"toàn bộ original_segment đã chuẩn hóa\", \"confidence\": 0.0}. confidence là số từ 0 tới 1 phản ánh mức chắc chắn, không mặc định 0.0."
+            }
+          ],
+          "word_errors": 1,
+          "reference_words": 29,
+          "wer": 0.034482758620689655,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "meaning",
+      "group": "contextual_typo",
+      "input": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+      "reference": "Nhớ nhắc nhau lịch họp. Tôi cần kiểm tra thông tin trước khi gửi.",
+      "results": {
+        "dataset": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 60.033,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 2,
+  "tokens": 471,
+  "transport_errors": [
+    "AITimeoutError"
+  ]
+}

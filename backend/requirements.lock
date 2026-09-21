@@ -1,0 +1,36 @@
+# Pin cứng phiên bản đã kiểm chứng trong môi trường phát triển
+# (Python 3.14, Windows) — dùng khi muốn cài đặt tái lập được:
+#
+#   python -m pip install -r requirements.lock
+#
+# `requirements.txt` vẫn là đặc tả khoảng phiên bản cho dev thường ngày;
+# file này ghim đúng các bản đã chạy kèm toàn bộ kiểm thử/quality gates.
+# Khi nâng cấp một package, cập nhật cả hai file và chạy lại pytest.
+
+# Core
+SQLAlchemy==2.0.50
+pyodbc==5.3.0
+python-dotenv==1.2.2
+fastapi==0.136.3
+pydantic==2.13.4
+uvicorn[standard]==0.48.0
+python-multipart==0.0.29
+
+# Auth / security
+bcrypt==4.3.0
+slowapi==0.1.9
+
+# AI (v2)
+httpx==0.28.1
+tenacity==9.1.4
+cachetools==7.1.4
+
+# Dev / quality
+ruff==0.15.15
+black==26.5.1
+mypy==2.1.0
+pytest==9.0.3
+pytest-asyncio==1.4.0
+pytest-cov==7.1.0
+respx==0.23.1
+bandit==1.9.4

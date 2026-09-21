@@ -1,0 +1,12 @@
+{
+  "engine": "rule",
+  "sample_size": 1000,
+  "token_accuracy": 0.8519,
+  "sentence_exact": 0.227,
+  "latency_p50_ms": 0.1,
+  "latency_p95_ms": 0.5,
+  "ran_at": "2026-05-17T09:28:30.224880+00:00",
+  "input": "data\\DataDauCau\\ViDiacritics_test.csv",
+  "word_map": "data\\diacritic\\word_map.json",
+  "bigram_freq": "data\\diacritic\\bigram_freq.json"
+}

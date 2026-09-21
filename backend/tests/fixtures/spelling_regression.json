@@ -1,0 +1,16 @@
+[
+  {"label":"positive","input":"đăn ký","expected":"đăng ký","spelling":1},
+  {"label":"positive","input":"xin đăn ký học phần","expected":"xin đăng ký học phần","spelling":1},
+  {"label":"positive","input":"đăn ký rồi đăn ký","expected":"đăng ký rồi đăng ký","spelling":2},
+  {"label":"negative","input":"dang ky","expected":"dang ky","spelling":0},
+  {"label":"negative","input":"Đăng Ký","expected":"Đăng Ký","spelling":0},
+  {"label":"negative","input":"https://example.vn/đăn ký","expected":"https://example.vn/đăn ký","spelling":0},
+  {"label":"negative","input":"đăn@example.vn ký","expected":"đăn@example.vn ký","spelling":0},
+  {"label":"negative","input":"ABC_đăn ký_123","expected":"ABC_đăn ký_123","spelling":0},
+  {"label":"negative","input":"Nguyễn Đăn Ký","expected":"Nguyễn Đăn Ký","spelling":0},
+  {"label":"negative","input":"thank you đăng ký online","expected":"thank you đăng ký online","spelling":0},
+  {"label":"negative","input":"không khuỷu tay","expected":"không khuỷu tay","spelling":0},
+  {"label":"negative","input":"xđăn kýy","expected":"xđăn kýy","spelling":0},
+  {"label":"mixed","input":"mk đăn ký học phần","expected":"mk đăng ký học phần","spelling":1},
+  {"label":"mixed","input":"ko đăn ký","expected":"ko đăng ký","spelling":1}
+]

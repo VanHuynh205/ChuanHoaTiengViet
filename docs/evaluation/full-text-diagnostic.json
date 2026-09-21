@@ -1,0 +1,63 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "online": true,
+  "cases": [
+    {
+      "id": "school",
+      "group": "diacritics",
+      "input": "hom nay lop minh thao luan ve cach hoc. moi ban can doc tai lieu truoc khi den lop, sau do dat cau hoi ve nhung phan chua hieu.",
+      "reference": "Hôm nay lớp mình thảo luận về cách học. Mỗi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+      "results": {
+        "dataset": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "targeted": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "error",
+          "reason": "provider_error",
+          "checked": 0,
+          "total": 1,
+          "seconds": 20.756,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 60.024,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 2,
+  "tokens": 0,
+  "transport_errors": [
+    "Kimi completion not accepted (length)",
+    "AITimeoutError"
+  ]
+}

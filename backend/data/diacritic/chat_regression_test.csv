@@ -1,0 +1,76 @@
+no_diacritics,with_diacritics,category
+"toi di hoc","tôi đi học",basic
+"ban co khoe khong","bạn có khỏe không",basic
+"hom nay troi dep qua","hôm nay trời đẹp quá",basic
+"em di lam ve roi","em đi làm về rồi",basic
+"anh ay la nguoi tot","anh ấy là người tốt",basic
+"toi khong biet nua","tôi không biết nữa",basic
+"cam on ban nhieu lam","cảm ơn bạn nhiều lắm",basic
+"chuc ban ngu ngon nhe","chúc bạn ngủ ngon nhé",basic
+"may gio roi ban","mấy giờ rồi bạn",basic
+"toi can giup do","tôi cần giúp đỡ",basic
+"mon do an co so nay kho that day","môn đồ án cơ sở này khó thật đấy",context_phrase
+"do an co so kho qua","đồ án cơ sở khó quá",context_phrase
+"kho that day m a","khó thật đấy m à",context_phrase
+"phai thuc den tan khuya de lam bai","phải thức đến tận khuya để làm bài",context_phrase
+"thuc den tan khuya luon","thức đến tận khuya luôn",context_phrase
+"nghe noi dao nay ban lam","nghe nói dạo này bận lắm",context_phrase
+"khong on ha ban","không ổn hả bạn",context_phrase
+"ko on ha","ko ổn hả",context_phrase
+"em nghe noi roi","em nghe nói rồi",context_phrase
+"noi cho anh biet di","nói cho anh biết đi",context_phrase
+"toi thich an com","tôi thích ăn cơm",ambiguous
+"co ay la nguoi dep","cô ấy là người đẹp",ambiguous
+"bo toi lam bac si","bố tôi làm bác sĩ",ambiguous
+"chung toi di du lich","chúng tôi đi du lịch",ambiguous
+"bai tap kho qua di","bài tập khó quá đi",ambiguous
+"toi muon an pho","tôi muốn ăn phở",ambiguous
+"con mua to qua","cơn mưa to quá",ambiguous
+"dung lo lang nhe","đừng lo lắng nhé",ambiguous
+"xe may bi hong roi","xe máy bị hỏng rồi",ambiguous
+"ngay mai di choi nhe","ngày mai đi chơi nhé",ambiguous
+"ok fine","ok fine",mixed_english
+"submit bai xong chua","submit bài xong chưa",mixed_english
+"deadline ngay mai roi","deadline ngày mai rồi",mixed_english
+"toi code xong roi","tôi code xong rồi",mixed_english
+"fix bug nay di","fix bug này đi",mixed_english
+"di","đi",short
+"ok","ok",short
+"roi","rồi",short
+"gio sao","giờ sao",short
+"duoc roi","được rồi",short
+"khong biet","không biết",short
+"tot lam","tốt lắm",short
+"an ninh trat tu duoc dam bao","an ninh trật tự được đảm bảo",formal
+"chinh phu da ban hanh nghi dinh moi","chính phủ đã ban hành nghị định mới",formal
+"giao duc la quoc sach hang dau","giáo dục là quốc sách hàng đầu",formal
+"kinh te phat trien on dinh","kinh tế phát triển ổn định",formal
+"y te cong cong can duoc chu trong","y tế công cộng cần được chú trọng",formal
+"sao may hom nay ban qua vay","sao mấy hôm nay bận quá vậy",natural_chat
+"oi troi oi nong qua di mat","ôi trời ơi nóng quá đi mất",natural_chat
+"thoi di ve ngu di cho roi","thôi đi về ngủ đi cho rồi",natural_chat
+"lam gi ma cang thang vay","làm gì mà căng thẳng vậy",natural_chat
+"tu hoc la chuyen nghe thi don gian nhung lam that moi thay","tự học là chuyện nghe thì đơn giản nhưng làm thật mới thấy",context_phrase_test2
+"co tam trang ngoi vao ban mo vo ra va tap trung","có tâm trạng ngồi vào bàn mở vở ra và tập trung",context_phrase_test2
+"nhung neu lam deu thi no giong nhu nhung giot nuoc nho roi lien tuc","nhưng nếu làm đều thì nó giống như những giọt nước nhỏ rơi liên tục",context_phrase_test2
+"lau ngay van co the lam mem ca hon da cung","lâu ngày vẫn có thể làm mềm cả hòn đá cứng",context_phrase_test2
+"thich bat dau that hoanh trang mua vo dep but moi","thích bắt đầu thật hoành tráng mua vở đẹp bút mới",context_phrase_test2
+"chi can cho ngoi kha yen it do gay xao nhang","chỉ cần chỗ ngồi kha yên ít đồ gây xao nhãng",context_phrase_test2
+"sao ban kia gioi qua sao minh cham qua","sao bạn kia giỏi quá sao mình chậm quá",context_phrase_test2
+"mo tai lieu doc muc luc lam thu 1 bai de ghi cau hoi can hoi thay co","mở tài liệu đọc mục lục làm thử 1 bài dễ ghi câu hỏi cần hỏi thầy cô",context_phrase_test2
+"thuc khuya day tre bo bua len lop lim dim ve phong nam bai don lai roi toi lai hoang","thức khuya dậy trễ bỏ bữa lên lớp lim dim về phòng nằm bài dọn lại rồi tối lại hoảng",context_phrase_test2
+"song co ne nep k phai la song kho khan","sống có nề nếp k phải là sống khô khan",context_phrase_test2
+"mot cai khung de khoi roi","một cái khung để khỏi rơi",context_phrase_test2
+"sang co the day cung mot khung gio gap chan uong nuoc","sáng có thể dậy cùng một khung giờ gấp chăn uống nước",context_phrase_test2
+"toi co the don ban 5 phut tat bot thong bao","tối có thể dọn bàn 5 phút tắt bớt thông báo",context_phrase_test2
+"co the keu cuu khi bi ket qua lau","có thể kêu cứu khi bị kẹt quá lâu",context_phrase_test2
+"nen chon nguoi phu hop it nhung chat k can dong","nên chọn người phù hợp ít nhưng chất k cần đông",context_phrase_test2
+"da biet hoi cau dung hon chua","đã biết hỏi câu đúng hơn chưa",context_phrase_test2
+"co khi minh se nho nhung toi ngoi hoc muon","có khi mình sẽ nhớ những tối ngồi học muộn",context_phrase_test2
+"noi vua du nghe o nha tro thi k bat am thanh qua lon luc dem","nói vừa đủ nghe ở nhà trọ thì k bật âm thanh quá lớn lúc đêm",context_phrase_test1
+"dung nha ve sinh chung thi don sach sau khi dung","dùng nhà vệ sinh chung thì dọn sạch sau khi dùng",context_phrase_test1
+"muon do cua ban thi tra dung hen","mượn đồ của bạn thì trả đúng hẹn",context_phrase_test1
+"no chi bien van de thanh cuc da roi nem vao nguoi khac","nó chỉ biến vấn đề thành cục đá rồi ném vào người khác",context_phrase_test1
+"nhung ba me anh chi em ong ba cung can duoc nghe loi nhe nhang","nhưng ba mẹ anh chị em ông bà cũng cần được nghe lời nhẹ nhàng",context_phrase_test1
+"mot cau hoi hom nay o nha sao roi","một câu hỏi hôm nay ở nhà sao rồi",context_phrase_test1
+"im lang qua lau co the lam ho lo hon","im lặng quá lâu có thể làm họ lo hơn",context_phrase_test1

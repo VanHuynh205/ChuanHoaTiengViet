@@ -1,0 +1,8 @@
+
+  VITE v6.4.2  ready in 394 ms
+
+  ➜  Local:   http://localhost:5186/
+  ➜  press h + enter to show help
+11:36:58 PM [vite] (client) hmr update /src/styles.css
+11:37:00 PM [vite] (client) hmr update /src/components/NormalizedOutputPane.tsx
+11:39:27 PM [vite] (client) hmr update /src/styles.css

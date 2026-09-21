@@ -1,0 +1,56 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "online": true,
+  "cases": [
+    {
+      "id": "meaning",
+      "group": "contextual_typo",
+      "input": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+      "reference": "Nhớ nhắc nhau lịch họp. Tôi cần kiểm tra thông tin trước khi gửi.",
+      "results": {
+        "dataset": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        },
+        "targeted": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm tra thông tin trước khi gửi.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 9.303,
+          "calls": 1,
+          "word_errors": 1,
+          "reference_words": 14,
+          "wer": 0.07142857142857142,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 1,
+  "tokens": 0
+}

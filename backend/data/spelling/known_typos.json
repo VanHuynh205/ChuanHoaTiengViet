@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "entries": [
+    {"wrong": "đăn ký", "correct": "đăng ký", "reason": "known_typo", "confidence": 0.99}
+  ]
+}

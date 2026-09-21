@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "source_file": "ReadMe.txt",
+    "title": "Unicode Emoji",
+    "version": "17.0"
+  },
+  "files": [
+    "emoji-sequences.txt",
+    "emoji-zwj-sequences.txt",
+    "emoji-test.txt"
+  ],
+  "related_files": [
+    "emoji-data.txt",
+    "emoji-variation-sequences.txt"
+  ],
+  "documentation": "UTS #51 Unicode Emoji, Version 17.0"
+}

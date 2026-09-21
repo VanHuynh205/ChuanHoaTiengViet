@@ -1,0 +1,14 @@
+{
+  "bigram_entries": 220000,
+  "builder": "build_diacritic_streaming.py",
+  "generated_at": "2026-09-21T12:48:30.859823+00:00",
+  "inputs": [
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\ViDiacritics_val.csv",
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\ViDiacritics_train.csv",
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\chat\\Dev.csv",
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\chat\\history_export.csv",
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\chat\\Test.csv",
+    "C:\\Users\\admin\\Downloads\\ChuanHoaTiengViet\\backend\\data\\DataDauCau\\chat\\Train.csv"
+  ],
+  "word_map_entries": 7170
+}

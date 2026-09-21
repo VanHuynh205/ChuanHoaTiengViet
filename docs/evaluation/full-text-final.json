@@ -1,0 +1,154 @@
+{
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "online": true,
+  "cases": [
+    {
+      "id": "school",
+      "group": "diacritics",
+      "input": "hom nay lop minh thao luan ve cach hoc. moi ban can doc tai lieu truoc khi den lop, sau do dat cau hoi ve nhung phan chua hieu.",
+      "reference": "Hôm nay lớp mình thảo luận về cách học. Mỗi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+      "results": {
+        "dataset": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "targeted": {
+          "output": "Hôm nay lớp Minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 6.789,
+          "calls": 1,
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Hôm nay lớp Minh Thảo luận về cách học. Mọi bản cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 6.589,
+          "calls": 1,
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "work",
+      "group": "diacritics",
+      "input": "minh da gui bao cao cho nhom. ban kiem tra lai so lieu truoc khi nop, dung sua nhung muc da duoc xac nhan.",
+      "reference": "Mình đã gửi báo cáo cho nhóm. Bạn kiểm tra lại số liệu trước khi nộp, đừng sửa những mục đã được xác nhận.",
+      "results": {
+        "dataset": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Ban kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "targeted": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Bàn kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 7.99,
+          "calls": 1,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Ban kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "error",
+          "reason": "timeout",
+          "checked": 0,
+          "total": 1,
+          "seconds": 60.023,
+          "calls": 1,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "travel",
+      "group": "diacritics",
+      "input": "neu troi mua thi minh se doi lich di choi. ca nhom nen mang theo ao khoac, nuoc uong va giay to can thiet.",
+      "reference": "Nếu trời mưa thì mình sẽ đổi lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+      "results": {
+        "dataset": {
+          "output": "Nếu trời mua thi minh sẽ đối lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "targeted": {
+          "output": "Nếu trời mua thi minh sẽ đối lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+          "status": "verified",
+          "reason": "provider_checked",
+          "checked": 1,
+          "total": 1,
+          "seconds": 13.637,
+          "calls": 1,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Nếu trời mua thi minh sẽ đối lịch đi chơi. Cả nhóm nên mang theo áo khoác, nước uống và giấy tờ cần thiết.",
+          "status": "error",
+          "reason": "provider_error",
+          "checked": 0,
+          "total": 1,
+          "seconds": 34.162,
+          "calls": 1,
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 6,
+  "tokens": 0,
+  "transport_errors": [
+    "AITimeoutError",
+    "Kimi completion not accepted (length)"
+  ]
+}

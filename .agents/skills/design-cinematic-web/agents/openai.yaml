@@ -1,0 +1,14 @@
+interface:
+  display_name: Adaptive Web Design System
+  short_description: Thiết kế web đa phong cách, tùy biến theo từng dự án
+  default_prompt: Dùng $design-cinematic-web để phân tích mục tiêu dự án, chọn phong
+    cách phù hợp và thiết kế các trang cùng luồng sử dụng cần thiết.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,159 @@
+{
+  "model": "mistralai/mistral-large-2-instruct",
+  "online": true,
+  "cases": [
+    {
+      "id": "school",
+      "group": "diacritics",
+      "input": "hom nay lop minh thao luan ve cach hoc. moi ban can doc tai lieu truoc khi den lop, sau do dat cau hoi ve nhung phan chua hieu.",
+      "reference": "Hôm nay lớp mình thảo luận về cách học. Mỗi bạn cần đọc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+      "results": {
+        "dataset": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Hôm nay lớp minh thảo luận về cách học. Mới bạn cần đốc tài liệu trước khi đến lớp, sau đó đặt câu hỏi về những phần chưa hiểu.",
+          "status": "error",
+          "reason": "provider_error",
+          "checked": 0,
+          "total": 1,
+          "seconds": 2.953,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 3,
+          "reference_words": 29,
+          "wer": 0.10344827586206896,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "work",
+      "group": "diacritics",
+      "input": "minh da gui bao cao cho nhom. ban kiem tra lai so lieu truoc khi nop, dung sua nhung muc da duoc xac nhan.",
+      "reference": "Mình đã gửi báo cáo cho nhóm. Bạn kiểm tra lại số liệu trước khi nộp, đừng sửa những mục đã được xác nhận.",
+      "results": {
+        "dataset": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Ban kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Minh đã gửi báo cáo cho nhóm. Ban kiểm tra lại số liệu trước khi nộp, dùng sữa những mục đã được xác nhận.",
+          "status": "error",
+          "reason": "provider_error",
+          "checked": 0,
+          "total": 1,
+          "seconds": 6.3,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 4,
+          "reference_words": 24,
+          "wer": 0.16666666666666666,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "food",
+      "group": "diacritics",
+      "input": "me dan minh nau canh voi lua nho. khi nuoc soi thi cho rau vao, dung de lau qua vi rau se bi nhun.",
+      "reference": "Mẹ dặn mình nấu canh với lửa nhỏ. Khi nước sôi thì cho rau vào, đừng để lâu quá vì rau sẽ bị nhũn.",
+      "results": {
+        "dataset": {
+          "output": "Mẹ dân minh nấu canh với lửa nhỏ. Khi nước sôi thi cho rau vào, dụng để lậu qua vì rau sẽ bị nhún.",
+          "status": "not_checked",
+          "reason": null,
+          "checked": 0,
+          "total": 1,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 7,
+          "reference_words": 24,
+          "wer": 0.2916666666666667,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Mẹ dân minh nấu canh với lửa nhỏ. Khi nước sôi thi cho rau vào, dụng để lậu qua vì rau sẽ bị nhún.",
+          "status": "error",
+          "reason": "provider_error",
+          "checked": 0,
+          "total": 1,
+          "seconds": 6.451,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 7,
+          "reference_words": 24,
+          "wer": 0.2916666666666667,
+          "exact": false
+        }
+      }
+    },
+    {
+      "id": "meaning",
+      "group": "contextual_typo",
+      "input": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+      "reference": "Nhớ nhắc nhau lịch họp. Tôi cần kiểm tra thông tin trước khi gửi.",
+      "results": {
+        "dataset": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "not_needed",
+          "reason": null,
+          "checked": 0,
+          "total": 0,
+          "seconds": 0.0,
+          "calls": 0,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        },
+        "whole_text": {
+          "output": "Nhớ nhạc nhau lịch họp. Tôi cần kiểm chá thông tin trước khi gửi.",
+          "status": "quota",
+          "reason": "rate_limited",
+          "checked": 0,
+          "total": 1,
+          "seconds": 3.768,
+          "calls": 1,
+          "provider_responses": [],
+          "word_errors": 2,
+          "reference_words": 14,
+          "wer": 0.14285714285714285,
+          "exact": false
+        }
+      }
+    }
+  ],
+  "notes": "Fixed small regression set; not a population accuracy estimate.",
+  "calls": 4,
+  "tokens": 0,
+  "transport_errors": [
+    "AINetworkError",
+    "AINetworkError",
+    "AINetworkError",
+    "AIRateLimitError"
+  ]
+}
